@@ -2,7 +2,7 @@ from http.client import REQUEST_ENTITY_TOO_LARGE
 import os
 import numpy as np
 import pandas as pd
-import matplotlib as plt
+import matplotlib.pyplot as plt
 from statsmodels.tsa.stattools import adfuller
 from statsmodels.tsa.seasonal import seasonal_decompose
 from pmdarima.arima import auto_arima
