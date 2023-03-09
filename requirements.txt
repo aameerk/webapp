@@ -4,7 +4,6 @@ matplotlib
 statsmodels
 pmdarima
 streamlit
-plotly.graph_objects
 Flask
 jsonify
 requests
@@ -15,5 +14,3 @@ make_subplots
 ARIMA
 mean_squared_error
 math
-statsmodels.graphics.tsaplots
-statsmodels.api
