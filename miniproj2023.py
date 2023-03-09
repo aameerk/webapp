@@ -22,17 +22,17 @@ app = Flask(__name__)
 st.header("Stock Prediction Web Application")
 # Define the paths and directories
 ROOT_DIR = "/kaggle/input"
-DATA_DIR = "/Users/aameerkhan/Desktop/webapp/DATA/archive"
+DATA_DIR = ["/Users/aameerkhan/Desktop/webapp/DATA/archive"]
 
 # Get list of CSV filenames from input directory
-csv_files = [f for f in DATA_DIR]
+
 
 # Create a dropdown menu to select a file
-selected_file = st.sidebar.selectbox("Select a CSV file", csv_files)
+selected_file = st.sidebar.selectbox("Select a CSV file", DATA_DIR)
 
 if selected_file:
     # Load the selected CSV file into a Pandas dataframe
-    df = pd.read_csv(os.path.join(DATA_DIR, selected_file))
+    df = pd.read_csv(DATA_DIR, selected_file)
     df = df.dropna()
     st.text("")
 
