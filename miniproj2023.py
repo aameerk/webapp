@@ -22,7 +22,7 @@ app = Flask(__name__)
 st.header("Stock Prediction Web Application")
 # Define the paths and directories
 ROOT_DIR = "/kaggle/input"
-DATA_DIR = ["/Users/aameerkhan/Desktop/webapp/DATA/archive"]
+DATA_DIR = "/Users/aameerkhan/Desktop/webapp/DATA/archive"
 
 # Get list of CSV filenames from input directory
 
