@@ -7,10 +7,4 @@ streamlit
 Flask
 jsonify
 requests
-adfuller
-seasonal_decompose
-auto_arima
-make_subplots
-ARIMA
-mean_squared_error
 math
